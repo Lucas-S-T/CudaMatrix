@@ -19,7 +19,7 @@ public:
     Matrix multiply(Matrix m);
     Matrix multiplyScalar(double m);
     Matrix exp();
-    void randomFill();
+    void randomFill(double seed);
     void randomFillSmall();
     double sumAll();
     Matrix divideScalar(double m);

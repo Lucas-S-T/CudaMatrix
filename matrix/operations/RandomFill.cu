@@ -4,14 +4,14 @@
 
 #include "../Matrix.cuh"
 
-void Matrix::randomFill(){
+void Matrix::randomFill(double seed){
 
     static double* c;
     c = (double*) calloc(Columns*Rows,sizeof(double));
 
     for(int i = 0; i<(Columns*Rows); i++ ){
 
-        c[i] = (((double) rand() / (RAND_MAX)) + 1)*pow(10, -0.5);
+        c[i] = (((double) rand() / (RAND_MAX)))*pow(seed, -0.5);
 
     }
 

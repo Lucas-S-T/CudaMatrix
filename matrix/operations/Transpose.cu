@@ -13,8 +13,13 @@ __global__ void matrixTranspose(double *a, double *c, int cr, int cc){
 
     if(x < cc && y < cr){
 
-        c[y * cc + x] = a[x * cc + y];
-    }
+        for(int i = 0; i<cc; i++) {
+
+            c[y * cc + x+i] = a[x * cc + y + i];
+
+        }
+}
+
 
 }
 

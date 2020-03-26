@@ -9,9 +9,9 @@ GPU? | Instrução | Detalhes | Exemplo | Local de execução
 
 - [x] add() | Adição de duas matrizes de tamanhos iguais | c = a+b | GPU
 - [x] addScalar() | Adição de um valor estático na matriz | c = a+x | GPU
-- [x] clip() | Limita o máximo e o mínimo de um valor na matriz | max < x > min | GPU
+- [x] clip() | Limita o máximo e o mínimo de um valor na matriz | max < a > min | GPU
 - [x] divideScalar() | Divide a matriz por um valor estático | c = a/x | GPU
-- [x] exp() | Constante de Euler elevado ao valor da matriz | x = e^a | GPU
+- [x] exp() | Constante de Euler elevado ao valor da matriz | c = e^a | GPU
 - [x] logit() | Aplica a função logit na matriz | Derivada da sigmoid | GPU
 - [x] multiply() | Multiplica 2 matrizes | C = A*B | GPU
 - [x] multiplyHadamard() | Multiplica 2 matrizes com a regra de hadamard | c = a*b | GPU
@@ -27,7 +27,7 @@ GPU? | Instrução | Detalhes | Exemplo | Local de execução
 - [x] tanh() | Aplica a função tanh na matriz | C = tanh(A) | GPU
 - [x] transpose() | Faz a transposição da matriz | C(i,j) = A(j,i) | GPU
 
-# Copyrights
+# Copyright
 
 Copyright 2020, Lucas Scarpinelli Tomazetto, CudaMatrix
 
